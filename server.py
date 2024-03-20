@@ -55,7 +55,7 @@ def order_melons():
     """Order melons and return a dictionary of result-code and result-msg."""
     melon = request.json.get('melon_type')
     qty = int(request.json.get('qty'))
-
+    
     if qty > 10:
         result_code = 'ERROR'
         result_text = "You can't buy more than 10 melons"
